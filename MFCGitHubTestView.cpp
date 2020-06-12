@@ -63,6 +63,7 @@ void CMFCGitHubTestView::OnDraw(CDC* pDC)
 	// TODO: add draw code for native data here
 	pDC->TextOutW(10,10,_T("Version 1"));
 	pDC->TextOutW(10, 50, _T("Version 2: This is a title"));
+	pDC->TextOutW(10, 100, _T("Version 5: Added from github website"));
 }
 
 
