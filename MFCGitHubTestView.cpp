@@ -53,7 +53,7 @@ BOOL CMFCGitHubTestView::PreCreateWindow(CREATESTRUCT& cs)
 
 // CMFCGitHubTestView drawing
 
-void CMFCGitHubTestView::OnDraw(CDC* /*pDC*/)
+void CMFCGitHubTestView::OnDraw(CDC* pDC)
 {
 	CMFCGitHubTestDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
@@ -61,6 +61,7 @@ void CMFCGitHubTestView::OnDraw(CDC* /*pDC*/)
 		return;
 
 	// TODO: add draw code for native data here
+	pDC->TextOutW(10,10,_T("Version 1"));
 }
 
 
